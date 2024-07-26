@@ -26,8 +26,12 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
 ALLOWED_HOSTS = [
-    "saas-django-5ug0.onrender.com","localhost"
+    'localhost',
+    '127.0.0.1',
+    'https://saas-django-5ug0.onrender.com',
+    # Add any other hosts/domains you want to allow
 ]
+
 
 if DEBUG:
     ALLOWED_HOSTS = []
